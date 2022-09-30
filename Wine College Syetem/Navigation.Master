@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navigation.master.cs" Inherits="Wine_Collection.Navigation" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>steak house</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Theme1/mainStyle.css" rel="stylesheet"/>
+     <%--<link href="App_Themes/Theme1/bootstrap.min.css" rel="stylesheet" />--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>                    
+        <h1>STEAK HOUSE</h1>
+        <h2>Member wine storage system</h2>
+        
+        <asp:BulletedList ID="topMenu" DisplayMode="HyperLink" class="nav" CausesValidation="false" runat="server" >
+            <asp:ListItem Text="Home" Value="Add_Customer.aspx"></asp:ListItem>
+            <asp:ListItem Text="Add Wine" Value="Add_Wine.aspx"></asp:ListItem>
+            <asp:ListItem Text="Collection List" Value="Collection_List.aspx"></asp:ListItem>
+        </asp:BulletedList>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
