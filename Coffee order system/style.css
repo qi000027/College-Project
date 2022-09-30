@@ -1,0 +1,175 @@
+.alert{
+  color: red;
+}
+
+h1 {
+  font-family: cursive;
+  text-align: center;
+  margin: 50px auto;
+}
+
+section {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #133854;
+  max-width: 600;
+  margin: 0 auto;
+}
+
+.lfloat {
+  float: left;
+}
+
+.clear {
+  clear: left;
+}
+
+#uName,
+#eMail, 
+#phone, 
+#adress, 
+#adress2,
+#pc {
+  width: 350px;
+}
+
+select {
+  width: 175px;
+}
+
+
+.shopping-cart {
+  width: 600;
+  height: 150px;
+  text-align: left;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.Table.shopping-cart .TableCell,
+.Table.shopping-cart .TableHead {
+  padding: 15px 15px;
+}
+
+.Table.shopping-cart .TableBody .TableCell {
+  font-size: 15px;
+}
+
+.Table.shopping-cart .product:nth-child(odd) {
+  background: lightgrey;
+}
+
+.Table.shopping-cart .column-labels {
+  border-bottom: 1px solid #444444;
+}
+
+.product-price {
+  width: 50px;
+  text-align: center;
+}
+
+.button-contatiner {
+  text-align: center;
+}
+
+.qty {
+  width: 100px;
+  text-align: center;
+}
+
+.shopping-cart {
+  font-size: 13px;
+  font-weight: bold;
+  color: #191919;
+  text-align: left;
+}
+
+/* .column-labels {
+  text-align: center;
+} */
+
+img {
+  width: 100px;
+  text-align: left;
+}
+
+/*add the dollar sign next to price */
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-tex:before {
+  content: '$';
+}
+
+.before-tex:before,
+.after-tex:before{
+  content:'$';
+}
+
+.totals {
+  display: table-row;
+}
+
+/* Table */
+.Table {
+  display: table;
+}
+
+.product {
+  display: table-row;
+}
+
+.column-labels {
+  display: inline-flex;
+  text-align: center;
+}
+
+.TableCell,
+.TableHead {
+  display: table-cell;
+}
+
+.column-labels {
+  display: table-header-group;
+}
+
+.TableBody {
+  display: table-row-group;
+}
+
+/*button */
+.submit {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  margin-right: -440;
+  padding: 6px 10px;
+  background-color: grey;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.submit:hover, .reset:hover {
+  background-color: #fdc800;
+}
+
+.reset {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  margin-right: -300;
+  padding: 6px 10px;
+  background-color: grey;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+#sum0, #pic0 {
+  font-size:20pt;
+  font-weight: 500;
+}
+

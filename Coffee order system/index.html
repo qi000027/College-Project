@@ -1,0 +1,235 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Star Coffee</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome STAR COFFEE</h1>
+  </header>
+
+  <section>
+    <form name="shipping" class="form" id="enterfrom">
+      <h2 class="mb-4">Shipping Address</h2>
+      <div class="firstname lfloat">
+        <label for="firstname">First Name</label><br>
+        <input type="text" id="fName" name="firstName" placeholder="First Name"><br>
+        <span class="alert" id="fNameError"></span><br>
+      </div>
+      <div class="lastname">
+        <label for="lastname">Last Name</label><br>
+        <input type="text" id="lName" name="lastName" placeholder="Last Name"><br>
+        <span class="alert" id="lNameError"></span><br>
+      </div>
+
+      <div class="username">
+        <label for="username">User Name</label><br>
+        <input type="text" id="uName" name="useName" placeholder="User Name"><br>
+        <span class="alert" id="uNameError"></span><br>
+      </div>
+
+      <div class="email">
+        <label for="email">Email</label><br>
+        <input type="email" id="eMail" name="eMail" placeholder="you@example.com"><br>
+        <span class="alert" id="emailError"></span><br>
+      </div>
+
+      <div class="phone">
+        <label for="phone">Phone</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <span class="alert" id="phoneError"></span>
+      </div>
+      <br>
+      <div class="address">
+        <label for="adress">Address 1</label><br>
+        <input type="text" id="adress" name="adress1" placeholder="Address Line 1"><br>
+        <span class="alert" id="addressError"></span><br>
+        <label for="adress">Address 2</label><br>
+        <input type="text" id="adress2" placeholder="Address Line 2 (optional)">
+      </div>
+      <br>
+      <div class="Select">
+        <div class="country lfloat">
+          <label for="country">Country</label><br>
+          <select type="text" id="country" name="country">
+            <option value="">Select...</option>
+            <option value="CA">Canada</option>
+          </select><br>
+          <span class="alert" id="countryError"></span>
+        </div>
+
+        <div class="city">
+          <label for="city">City</label><br>
+          <select type="text" id="city" name="city">
+            <option value="">Select...</option>
+            <option value="ottawa">Ottawa</option>
+            <option value="toronto">Toronto</option>
+            <option value="vancouver">Vancouver</option>
+            <option value="montreal">Montreal</option>
+          </select><br>
+          <span class="alert" id="cityError"></span><br>
+        </div>
+      </div>
+
+      <div class="postcode">
+        <label for="postcode">Postcode</label><br>
+        <input type="text" id="pc" name="postCode" placeholder="6 digits"><br>
+        <span class="alert" id="postCodeError"></span><br>
+      </div>
+
+      <div class="delivery">
+        <label for="delivery">Delivery</label><br>
+        <input type="radio" id="deli" name="delivery" checked>Uber<br>
+        <input type="radio" id="deli" name="delivery" >Lyft<br>
+        <input type="radio" id="deli" name="delivery" >Pick up<br>
+      </div>
+      <br>
+
+      <div class="date">
+        <label for="postcode">Shipping Date</label><br>
+        <input type="date" id="sdate" name="trip-start" min="2022-04-12" value="2022-04-12" max="2022-04-22"><br>
+      </div>
+     
+      <hr>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="shipping-adress" checked ='checked'>
+        Shipping address is the same as my billing address
+        <label for="shipping-adress" class="form-check-label"></label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="same-adress">
+        Save this information for next time
+        <label for="same-adress" class="form-check-label"></label>
+      </div>
+
+      <hr>
+  
+
+      <h2 class="mb-4">Shopping List</h2>
+
+      <div class="shopping-cart Table">
+        <div class="column-labels">
+          <label class="product-image TableHead">Image</label>
+          <label class="product-details TableHead">Product</label>
+          <label class="product-price TableHead">Price</label>
+          <label class="product-quantity TableHead">Quantity</label>
+          <label class="product-cost TableHead" id="cost">Cost</label>
+        </div>
+
+        <div class="TableBody myTable">
+          <div class="product">
+            <div class="product-image TableCell">
+              <img src="/images/mocha.jpeg" id="img" alt="mocha">
+            </div>
+            <div class="product-title TableCell">Mocha</div>
+            <div class="TableCell">
+              <input type="text" class="product-price" value="7" disabled>
+            </div>
+            
+            <div class="button-contatiner">
+              <button type="button" class="cart-qty-minus" name="button" value="-">-</button>
+              <input type="text" name="qty" min="0" id="mocha" class="qty" value="0">
+              <button type="button" class="cart-qty-plus" name="button" value="+">+</button>
+            </div>
+            <div class="product-line-price TableCell amount" id="amount">0</div>
+          </div>
+
+          <div class="product">
+            <div class="product-image TableCell">
+              <img src="/images/latte.jpeg" id="img" alt="latte">
+            </div>
+            <div class="product-title TableCell">Latte</div>
+            <div class="TableCell">
+              <input type="text" class="product-price" value="9" disabled>
+            </div>
+            <div class="button-contatiner">
+              <button type="button" class="cart-qty-minus" name="button" value="-">-</button>
+              <input type="text" name="qty" min="0" id="latte" class="qty" value="0">
+              <button type="button" class="cart-qty-plus" name="button" value="+">+</button>
+            </div>
+            <div class="product-line-price TableCell amount" id="amount2">0</div>
+          </div>
+
+          <div class="product">
+            <div class="product-image TableCell">
+              <img src="/images/cappuccino.jpeg" id="img" alt="cappuccino">
+            </div>
+            <div class="product-title TableCell">Cappuccino</div>
+            <div class="TableCell">
+              <input type="text" class="product-price" value="8" disabled>
+            </div>
+            <div class="button-contatiner">
+              <button type="button" class="cart-qty-minus" name="button" value="-">-</button>
+              <input type="text" name="qty" min="0" id="capp" class="qty" value="0">
+              <button type="button" class="cart-qty-plus" name="button" value="+">+</button>
+            </div>
+            <div class="product-line-price TableCell amount" id="amount3"></div>
+
+          </div>
+
+          <div class="totals">
+            <div class="totals-item TableCell">Subtotal</div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="before-tex TableCell" id="cart-subtotal"></div>
+          </div>
+
+          <div class="totals">
+            <div class="totals-item TableCell">TEX @ 13%</div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="totals-tex TableCell" id="cart-tex"></div>
+          </div>
+
+          <div class="totals">
+            <div class="totals-item TableCell"><b>Total Cost</b></div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="TableCell"></div>
+            <div class="after-tex TableCell" id="cart-total"></div>
+          </div>
+
+          <input type="submit" value="Submit" class="submit" id="submitBtn" name="submit" onclick="showInput();">
+          <input type="reset" value="Reset" class="reset" id="resetBtn" name="reset">
+          <!-- <input type="submit" onclick="showInput();"> -->
+        </div>
+      </div>
+    </form>
+
+    <section id="summary">
+      <span id="sum0"></span><br>
+      <span id="sum1"></span><br>
+      <span id="sum2"></span><br>
+      <span id="sum3"></span><br>
+      <span id="sum4"></span><br>
+      <span id="sum5"></span><br>
+      <span id="sum6"></span><br>
+      <span id="sum7"></span><br>
+      <span id="sum8"></span><br>
+        <br>
+      <span id="pic0"></span><br>
+      <span id="pic1"></span><br>
+      <span id="pic2"></span><br>
+      <span id="pic3"></span><br>
+      
+    
+      
+    </section>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>

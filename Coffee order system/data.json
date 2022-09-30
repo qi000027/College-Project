@@ -1,0 +1,21 @@
+{"coffee" : [
+    {
+      "image": "images/mocha.jpeg",
+      "productName": "Mocha",
+      "qty": 0,
+      "price": 7
+    },
+    {
+      "image": "images/latte.jpeg",
+      "productName": "Latte",
+      "qty": 0,
+      "price": 8
+    },
+    {
+      "image": "images/cappuccino.jpeg",
+      "productName": "Cappuccino",
+      "qty": 0,
+      "price": 8
+    }
+]
+}
